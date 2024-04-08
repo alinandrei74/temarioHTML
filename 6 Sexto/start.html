@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Registration Form</title>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label for="lastname">Lastname:</label></td>
+        <td><input type="text" id="lastname" name="lastname" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="dob">Date of birth:</label></td>
+        <td><input type="date" id="dob" name="dob" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="tel">Telephone number:</label></td>
+        <td><input type="tel" id="tel" name="tel" required></td>
+      </tr>
+
+      <tr>
+        <td><label for="plan">Choose a plan:</label></td>
+        <td>
+          <select id="plan" name="plan" required>
+            <option value="free">Free Plan</option>
+            <optgroup label="Paid Plans">
+              <option value="basic">Basic Plan - $9.99/month</option>
+              <option value="standard">Standard Plan - $19.99/month</option>
+              <option value="premium">Premium Plan - $29.99/month</option>
+            </optgroup>
+          </select>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td><label for="pro">Pro Plan:</label></td>
+        <td><input type="checkbox" id="pro" name="pro"></td>
+      </tr>
+
+      <tr>
+        <td><label for="ccnum">Credit Card Number:</label></td>
+        <td><input type="text" id="ccnum" name="ccnum" pattern="\d*" minlength="16" maxlength="16" required></td>
+      </tr>
+      <tr>
+        <td><label for="cvc">CVC:</label></td>
+        <td><input type="text" id="cvc" name="cvc" pattern="\d*" minlength="3" maxlength="4" required></td>
+      </tr>
+      <tr>
+        <td><label for="expdate">Expiration Date:</label></td>
+        <td><input type="month" id="expdate" name="expdate" required></td>
+      </tr>
+
+
+      <tr>
+        <td><label for="address">Billing Address:</label></td>
+        <td><textarea id="address" name="address" required></textarea></td>
+      </tr>
+
+
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Register"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
